@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send feedback to SportPulse News - we value your opinions and suggestions.">
+  <title>Feedback | SportPulse News</title>
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logo.svg" alt="SportPulse News Logo" class="brand-logo me-2" width="120" height="40">
+          <span class="fw-bold">SportPulse</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="football.html">Football</a></li>
+            <li class="nav-item"><a class="nav-link" href="basketball.html">Basketball</a></li>
+            <li class="nav-item"><a class="nav-link" href="tennis.html">Tennis</a></li>
+            <li class="nav-item"><a class="nav-link" href="athletics.html">Athletics</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Feedback</h1>
+      <p class="mb-0">We value your opinions — help us improve SportPulse News</p>
+    </div>
+  </div>
+
+  <main class="container mb-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div id="successMessage" class="success-message" role="alert">
+          Thank you! Your feedback has been submitted successfully.
+        </div>
+
+        <form id="feedbackForm" class="feedback-form" novalidate>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="fullName" name="fullName" required minlength="2" maxlength="100" placeholder="Enter your full name" autocomplete="name">
+            <div id="fullNameError" class="form-error" role="alert"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email">
+            <div id="emailError" class="form-error" role="alert"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+            <input type="tel" class="form-control" id="phone" name="phone" required pattern="[\d\s\-+()]{7,20}" placeholder="+267 71 234 567" autocomplete="tel">
+            <div id="phoneError" class="form-error" role="alert"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="sportInterest" class="form-label">Favourite Sport Category <span class="text-danger">*</span></label>
+            <select class="form-select" id="sportInterest" name="sportInterest" required>
+              <option value="">-- Select a sport --</option>
+              <option value="football">Football</option>
+              <option value="basketball">Basketball</option>
+              <option value="tennis">Tennis</option>
+              <option value="athletics">Athletics</option>
+              <option value="other">Other</option>
+            </select>
+            <div id="sportInterestError" class="form-error" role="alert"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="rating" class="form-label">Rate Your Experience <span class="text-danger">*</span></label>
+            <select class="form-select" id="rating" name="rating" required>
+              <option value="">-- Select rating --</option>
+              <option value="5">5 - Excellent</option>
+              <option value="4">4 - Very Good</option>
+              <option value="3">3 - Good</option>
+              <option value="2">2 - Fair</option>
+              <option value="1">1 - Poor</option>
+            </select>
+            <div id="ratingError" class="form-error" role="alert"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label>
+            <textarea class="form-control" id="message" name="message" rows="5" required minlength="10" maxlength="500" placeholder="Tell us what you think about our website (minimum 10 characters)"></textarea>
+            <div id="messageError" class="form-error" role="alert"></div>
+          </div>
+
+          <div class="mb-4 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+            <label class="form-check-label" for="terms">I agree to the terms and conditions and privacy policy <span class="text-danger">*</span></label>
+            <div id="termsError" class="form-error" role="alert"></div>
+          </div>
+
+          <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-accent">Submit Feedback</button>
+            <button type="reset" class="btn btn-outline-secondary">Clear Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 SportPulse News. <a href="index.html">Home</a> | <a href="about.html">About</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

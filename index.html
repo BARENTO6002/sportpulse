@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SportPulse News - Your premier destination for the latest sports news, scores, and analysis.">
+  <title>SportPulse News | Home</title>
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logo.svg" alt="SportPulse News Logo" class="brand-logo me-2" width="120" height="40">
+          <span class="fw-bold">SportPulse</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="football.html">Football</a></li>
+            <li class="nav-item"><a class="nav-link" href="basketball.html">Basketball</a></li>
+            <li class="nav-item"><a class="nav-link" href="tennis.html">Tennis</a></li>
+            <li class="nav-item"><a class="nav-link" href="athletics.html">Athletics</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-banner" style="background-image: url('images/hero-stadium.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Your Pulse on World Sports</h1>
+          <p class="lead mb-4">Breaking news, live updates, and in-depth analysis from football, basketball, tennis, athletics and more.</p>
+          <a href="football.html" class="btn btn-accent btn-lg me-2">Latest Football</a>
+          <a href="feedback.html" class="btn btn-outline-light btn-lg">Send Feedback</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="section-title">Top Stories</h2>
+        <div class="row g-4 mb-4">
+          <div class="col-md-6">
+            <article class="card news-card">
+              <img src="images/football-action.jpg" alt="Football players celebrating a goal" class="card-img-top" width="400" height="200">
+              <div class="card-body">
+                <span class="badge badge-sport mb-2">Football</span>
+                <h3 class="card-title h5">Champions League Quarter-Finals Set</h3>
+                <p class="card-text">Eight elite clubs battle for European glory as the knockout stage heats up across the continent.</p>
+                <a href="football.html" class="btn btn-primary-custom btn-sm">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="card news-card">
+              <img src="images/basketball-game.jpg" alt="Basketball player dunking during a game" class="card-img-top" width="400" height="200">
+              <div class="card-body">
+                <span class="badge badge-sport mb-2">Basketball</span>
+                <h3 class="card-title h5">NBA Playoffs Race Intensifies</h3>
+                <p class="card-text">Western Conference teams fight for playoff seeding as the regular season enters its final stretch.</p>
+                <a href="basketball.html" class="btn btn-primary-custom btn-sm">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="card news-card">
+              <img src="images/tennis-match.jpg" alt="Tennis player serving at a championship" class="card-img-top" width="400" height="200">
+              <div class="card-body">
+                <span class="badge badge-sport mb-2">Tennis</span>
+                <h3 class="card-title h5">Grand Slam Season Preview</h3>
+                <p class="card-text">Top seeds prepare for clay court season with eyes on Roland Garros and Wimbledon titles.</p>
+                <a href="tennis.html" class="btn btn-primary-custom btn-sm">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="card news-card">
+              <img src="images/athletics-track.jpg" alt="Athletes sprinting on an Olympic track" class="card-img-top" width="400" height="200">
+              <div class="card-body">
+                <span class="badge badge-sport mb-2">Athletics</span>
+                <h3 class="card-title h5">World Records Fall at Diamond League</h3>
+                <p class="card-text">Sprinters and distance runners deliver stunning performances at the season-opening meet.</p>
+                <a href="athletics.html" class="btn btn-primary-custom btn-sm">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <aside class="col-lg-4">
+        <div class="sidebar-widget">
+          <h4>Trending Now</h4>
+          <ul class="list-unstyled trending-list">
+            <li><a href="football.html">Transfer window latest updates</a></li>
+            <li><a href="basketball.html">MVP race standings revealed</a></li>
+            <li><a href="tennis.html">WTA rankings shuffle after finals</a></li>
+            <li><a href="athletics.html">Olympic qualifying times updated</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h4>Quick Links</h4>
+          <div class="d-grid gap-2">
+            <a href="football.html" class="btn btn-outline-primary btn-sm">Football News</a>
+            <a href="basketball.html" class="btn btn-outline-primary btn-sm">Basketball News</a>
+            <a href="tennis.html" class="btn btn-outline-primary btn-sm">Tennis News</a>
+            <a href="athletics.html" class="btn btn-outline-primary btn-sm">Athletics News</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>SportPulse News</h5>
+          <p>Delivering accurate, timely sports journalism since 2024. Your trusted source for global sports coverage.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Sports Categories</h5>
+          <ul class="list-unstyled">
+            <li><a href="football.html">Football</a></li>
+            <li><a href="basketball.html">Basketball</a></li>
+            <li><a href="tennis.html">Tennis</a></li>
+            <li><a href="athletics.html">Athletics</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SportPulse News. All rights reserved. | Web &amp; Multimedia Development Assignment</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
